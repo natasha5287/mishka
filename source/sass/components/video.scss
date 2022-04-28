@@ -1,0 +1,137 @@
+.video {
+  margin: 0 auto;
+  max-width: 1150px;
+  padding: 0 30px 58px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px 65px;
+  }
+}
+
+.video__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border: 1px solid #ececec;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: (145px auto);
+    row-gap: 25px;
+    padding-bottom: 0;
+  }
+}
+
+.video__wrap {
+  padding: 0 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 62px;
+
+    &--end {
+      align-self: end;
+    }
+  }
+}
+
+.video__title {
+  position: relative;
+  margin: 0 0 26px;
+  padding-left: 60px;
+  font-size: 17px;
+  line-height: 24px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 22px;
+    top: 12px;
+    left: 0;
+    background-image: url("../img/video.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 65px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      top: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 0;
+  }
+}
+
+.video__box {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1/1/-1/2;
+    margin: 0;
+  }
+}
+
+.video__youtube {
+  display: block;
+  margin: 0 auto;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
+    margin: 0;
+  }
+}
+
+.video_description {
+  margin: 0 0 40px;
+  font-size: 13px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+.video__button {
+  padding: 14px 11px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 16px;
+  }
+}

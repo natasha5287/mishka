@@ -1,0 +1,47 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  max-width: 1150px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.header__wrap {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 89px;
+    justify-content: flex-start;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+  }
+}
+
+.header__logo {
+  z-index: 2;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

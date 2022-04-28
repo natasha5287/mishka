@@ -1,0 +1,139 @@
+.about {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1150px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
+  }
+}
+
+.about__title {
+  margin: 35px 0 81px 0;
+  font-size: 25px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 55px 0 98px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 68px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.about__list {
+  margin: 0 0 58px;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 83px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+  }
+}
+
+.about__item {
+  position: relative;
+  margin-bottom: 83px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 110px;
+
+    &:nth-child(3n+3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.about__item:last-child {
+  margin-bottom: 0;
+}
+
+.about__item--flower::before {
+  top: -55px;
+  left: 7px;
+  width: 33px;
+  height: 38px;
+  background-image: url("../img/about-icon-1.svg");
+}
+
+.about__item--money {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+
+.about__item--money::before {
+  top: -53px;
+  left: 0;
+  width: 47px;
+  height: 27px;
+  background-image: url("../img/about-icon-3.svg");
+}
+
+.about__item--heart {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
+
+.about__item--heart::before {
+  top: -48px;
+  left: 6px;
+  width: 34px;
+  height: 27px;
+  background-image: url("../img/about-icon-5.svg");
+}
+
+.about__item--yarn::before {
+  top: -50px;
+  left: 3px;
+  width: 35px;
+  height: 34px;
+  background-image: url("../img/about-icon-2.svg");
+}
+
+.about__item--rocket::before {
+  top: -50px;
+  left: -5px;
+  width: 55px;
+  height: 23px;
+  background-image: url("../img/about-icon-4.svg");
+}
+
+.about__item--gift::before {
+  top: -52px;
+  left: 3px;
+  width: 33px;
+  height: 32px;
+  background-image: url("../img/about-icon-6.svg");
+}

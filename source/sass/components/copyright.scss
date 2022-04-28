@@ -1,0 +1,30 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.copyright__text {
+  margin-right: 27px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.copyright__link {
+  display: block;
+
+  &:hover .copyright__icon {
+    fill: #46c1ae;
+  }
+
+  &:active .copyright__icon {
+    fill: rgba(70, 193, 174, 0.3);
+  }
+}
+
+.copyright__icon {
+  vertical-align: middle;
+  fill: #63d1bb;
+}

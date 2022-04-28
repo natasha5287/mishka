@@ -1,0 +1,78 @@
+.field {
+  display: block;
+  width: 100%;
+  padding: 17px 10px 17px 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:focus-visible {
+    border-bottom: 2px solid #62d1ba;
+    outline: none;
+  }
+
+  &:not(:placeholder-shown) {
+    padding: 17px 10px;
+    color: #444444;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 18px 14px 18px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+  }
+}
+
+.field--border {
+  min-height: 142px;
+  padding-left: 17px;
+  border: 2px solid #000000;
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:focus-visible {
+    border: 2px solid #62d1ba;
+    outline: none;
+  }
+
+  &:not(:placeholder-shown) {
+    color: #000000;
+  }
+}
+
+.field__icon {
+  position: absolute;
+  top: 12px;
+  right: 6px;
+  fill: rgba(0, 0, 0, 0.2);
+
+  @media (min-width: $tablet-width) {
+    right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 180px;
+  }
+}
+
+.field:hover ~ .field__icon,
+.field:focus-visible ~ .field__icon,
+.field:active ~ .field__icon {
+  fill: #62d1ba;
+}

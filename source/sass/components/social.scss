@@ -1,0 +1,46 @@
+.social__list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 15px 0;
+  list-style: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  padding: 10px;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:focus-visible {
+    fill: #46c1ae;
+    outline: none;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}

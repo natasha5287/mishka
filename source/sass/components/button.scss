@@ -1,0 +1,38 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #444444;
+  background-color: #ffffff;
+  border: 2px solid #444444;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--modal {
+  padding: 15px 30px;
+  font-size: 17px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #63d1bb;
+  border-color: #63d1bb;
+
+  &:hover {
+    background-color: #46c1ae;
+    border-color: #46c1ae;
+  }
+}
