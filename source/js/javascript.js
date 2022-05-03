@@ -14,7 +14,6 @@ navToggle.addEventListener('click', function() {
 })
 
 let buttonCart = document.querySelector('.promo__button');
-let catalogCart = document.querySelector('.product__button');
 let modalCart = document.querySelector('.modal');
 
 buttonCart.addEventListener('click', function() {
@@ -24,9 +23,4 @@ buttonCart.addEventListener('click', function() {
   }
 })
 
-catalogCart.addEventListener('click', function() {
-  if(modalCart.classList.contains('modal__closed')) {
-    modalCart.classList.remove('modal__closed');
-    modalCart.classList.add('modal__opened');
-  }
-})
+
