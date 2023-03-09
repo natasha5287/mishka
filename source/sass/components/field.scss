@@ -22,7 +22,7 @@
   &:not(:placeholder-shown) {
     padding: 17px 10px;
     color: #444444;
-    font-size: 19px;
+    font-size: 17px;
     line-height: 18px;
   }
 
@@ -71,8 +71,8 @@
   }
 }
 
-.field:hover ~ .field__icon,
-.field:focus-visible ~ .field__icon,
-.field:active ~ .field__icon {
+.field:hover~.field__icon,
+.field:focus-visible~.field__icon,
+.field:active~.field__icon {
   fill: #62d1ba;
 }

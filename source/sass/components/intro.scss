@@ -116,6 +116,7 @@
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
+  transition: transform 0.25s ease-in-out;
 
   &:hover {
     transform: translateY(-5px);
